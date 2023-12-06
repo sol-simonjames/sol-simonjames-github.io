@@ -1,0 +1,108 @@
+/*font*/
+@font-face {
+    font-family: swiftie1;
+    src: url(fonts/Satisfaction.ttf);
+}
+.taylorswift{
+    font-family: swiftie1;
+    font-size: 100px;
+    color: #68b541;
+}
+
+@font-face {
+    font-family: swiftie2;
+    src: url(fonts/fearless.otf);
+}
+.fearless{
+    font-family: swiftie2;
+    font-size: 100px;
+    color: #d1b58f;
+}
+
+@font-face {
+    font-family: swiftie3;
+    src: url(fonts/Sudestada.ttf);
+}
+.speaknow{
+    font-family: swiftie3;
+    font-size: 100px;
+    color: #602264;
+}
+
+@font-face {
+    font-family: swiftie4;
+    src: url(fonts/red.otf);
+}
+.red{   
+    font-family: swiftie4;
+    font-size: 100px;
+    color: #c21d48;
+}
+
+@font-face {
+    font-family: swiftie5;
+    src: url(fonts/1989.ttf);
+}
+.nineteeneightynine{
+    font-family: swiftie5;
+    font-size: 100px;
+    color: #6b96b4;
+}
+
+@font-face {
+    font-family: swiftie6;
+    src: url(fonts/OPTIEngraversOldEnglish.otf);
+}
+.reputation{
+    font-family: swiftie6;
+    font-size: 100px;
+    color: #222222;
+}
+
+@font-face {
+    font-family: swiftie7;
+    src: url(fonts/lover.otf);
+}
+.lover{
+    font-family: swiftie7;
+    font-size: 100px;
+    color: #d25789;
+}
+
+@font-face {
+    font-family: swiftie8;
+    src: url(fonts/folkloreevermore.ttf); 
+}
+.folklore{
+    font-family: swiftie8;
+    font-size: 100px;
+    color: #858585;
+}
+
+@font-face {
+    font-family: swiftie9;
+    src: url(fonts/folkloreevermore.ttf);
+}
+.evermore{
+    font-family: swiftie9;
+    font-size: 100px;
+    color: #bf9d8e;
+}
+
+.midnights{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    color: #555983;
+}
+.navbar-brand{
+    font-family: projectfont;
+}
+@font-face {
+    font-family: project123;
+    src: url(fonts/project.ttf);
+}
+.projectfont{
+    font-family: project123;
+    color: black;
+}
