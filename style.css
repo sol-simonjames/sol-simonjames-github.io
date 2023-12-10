@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: swiftie6;
+    src: url(fonts/OPTIEngraversOldEnglish.otf);
+}
+.reputation{
+    font-family: swiftie6;
+    font-size: 100px;
+    color: #222222;
+}
+.midnights{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    color: #555983;
+}
+@font-face {
+    font-family: awaw;
+    src: url(./index.ttf);
+}
+.landingpagefont{
+    font-family: awaw;
+    color: #d1b58f;
+}
