@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .landingpage {
-          background-image: url(Untitled\ design\ \(3\)\ -\ Copy.png);
-          background-repeat: no-repeat;
-          background-size: cover;
+          background-color: black;
             height: 100vh;
             width: 100vw;
         }
@@ -63,30 +61,19 @@
         .project:hover {
             color: white;
         }
-
-        .container.indexfont {
-            color: #d1b58f;
+        .masmalaki{
+          font-size: 150px;
         }
-
-        .container.indexfont p {
-            font-size: 4vw;
+        .masmaliit{
+          font-size: 80px;
         }
-
-        .container.indexfont p {
-        font-size: 70px;
+        @media only screen and (max-width: 600px) {
+        .masmalaki {
+          font-size: 100px;
+         }
+        .masmaliit{
+          font-size: 40px;
         }
-
-        @media (min-width: 680px) {
-    .container.indexfont p {
-        font-size: 120px; 
-        }
-        }
-
-        @media(min-width: 680px){
-          .landingpage{
-            width: 100vw;
-            height: 100vh;
-          }
         }
     </style>
 </head>
@@ -95,7 +82,6 @@
     <!--NAVBAR TO-->
     <div class="landingpage">
         <nav class="navbar navbar-expand-lg bg-transparent navbar-light">
-            <!-- ... (unchanged) ... -->
             <div class="container-fluid">
                 <a class="navbar-brand" style="color: #d1b58f;">
                   <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/373488003_2509126072594526_5167669902061692540_n.jpg?stp=dst-jpg_p206x206&_nc_cat=103&ccb=1-7&_nc_sid=510075&_nc_ohc=VxSODNyJlDQAX_VLDrV&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRpGTMmitireVzGMl0ZqMBwSRJ1DDG5FzsmYINNSMIK4w&oe=658E14D5" width="30" height="30" class="d-inline-block align-top">
@@ -107,31 +93,36 @@
                 <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
-                      <a class="nav-link indexfont" href="#">HOME<span class="sr-only">(current)</span></a>
+                      <a class="nav-link landingpagefont" href="#">HOME<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link indexfont" href=".\Profile">PROFILE</a>
+                      <a class="nav-link landingpagefont" href=".\Profile">PROFILE</a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link indexfont" href=".\Project">PROJECT</a>
+                      <a class="nav-link landingpagefont" href=".\Project">PROJECT</a>
                     </li>
                   </ul>
                   <ul class="nav justify-content-end">
                     <ul class="nav-item nav-link">
-                      <a href="https://www.youtube.com/watch?v=qZqI0uUddUU" class="fa fa-facebook"></a>
+                      <a href="" class="fa fa-facebook"></a>
                     </ul>
                     <ul class="nav-item nav-link">
-                      <a href="https://youtu.be/vBFkBqctk-A?si=6Z9owNqgvW41Keek" class="fa fa-twitter"></a>
+                      <a href="" class="fa fa-twitter"></a>
                     </ul>
                     <ul class="nav-item nav-link">
-                      <a href="https://youtu.be/B7aSDu6Qh6U?si=xqqVs5S3d41pnsB2" class="fa fa-instagram"></a>
+                      <a href="" class="fa fa-instagram"></a>
                     </ul>
                     <ul class="item nav-link">
-                      <a href="https://www.youtube.com/watch?v=JiNh-go3YCs" class="fa fa-google"></a>
+                      <a href="" class="fa fa-google"></a>
                     </ul>
                   </ul>
                 </div>
           </div>
-      </div>
-</body>
+            </nav>
+            <div class="container" style="padding-top: 120px;">
+                <p class="landingpagefont masmalaki">HI, IM SIMON</p>
+                <p class="landingpagefont masmaliit">UI & UX DESIGNER</p>
+            </div>
+            </div>
+    </body>
 </html>
