@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: swiftie5;
+    src: url(fonts/1989.ttf);
+}
+.nineteeneightynine{
+    font-family: swiftie5;
+    color: #6b96b4;
+}
+
+@font-face {
+    font-family: swiftie6;
+    src: url(fonts/OPTIEngraversOldEnglish.otf);
+}
+.reputation{
+    font-family: swiftie6;
+    font-size: 100px;
+    color: #222222;
+}
+
+@font-face {
+    font-family: swiftie7;
+    src: url(fonts/lover.otf);
+}
+.lover{
+    font-family: swiftie7;
+    font-size: 100px;
+    color: #d25789;
+}
+.midnights{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    color: #555983;
+}
+.navbar-brand{
+    font-family: nineteeneightynine;
+}
+@font-face {
+    font-family: dkoalamanoto;
+    src: url(./index.ttf);
+}
+.indexfont{
+    font-family: dkoalamanoto;
+
+/*sa may project page nato*/
+}
+@font-face {
+    font-family: project;
+    src: url(./project.ttf);
+}
+.projectmainfont{
+    font-family: project;
+}
+.projectfont{
+    font-family: project;
+}
