@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1, h2, h3, h4, h5, p, {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+        }
+        .container{
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        h4, h3,hr{
+            color: white;
+            font-family: sans-serif;
+        }
+        #kld{
+        background: #CFE7fA;
+        font-family: sans-serif;
+        background: linear-gradient(to right, yellowgreen 0%, yellowgreen 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+        #inhs{
+        background: #CFE7fA;
+        font-family: sans-serif;
+        background: linear-gradient(to right, red 0%, red 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        padding-top: 30px;
+        }
+        #gpgshs{
+        background: #CFE7fA;
+        font-family: sans-serif;
+        background: linear-gradient(to right, yellow 0%, yellow 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        }
+        #pwhs{
+        background: #CFE7fA;
+        font-family: sans-serif;
+        background: linear-gradient(to right,  rgb(10, 89, 187), rgb(10, 89, 187));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        }
+        #pasay{
+        background: #CFE7fA;
+        font-family: sans-serif;
+        background: linear-gradient(to right, yellow 0%, yellow 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        }
+        body{
+            background-image: linear-gradient(black ,black,black, black, white);
+        }
+        .container img {
+            width: 100px;
+            margin-right: 20px;
+            float: left;
+            border-radius: 5px;
+        }
+        .container h3{
+            display: flex;
+            align-items: center;
+        }
+        .itallic123{
+            font-style: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: #0c0207;
+        }
+        h5{
+            font-family: sans-serif;
+            color: black;
+            align-items: center;
+        }
+        h1{
+            font-size: 40px;
+            background: #CFE7fA;
+            font-family: sans-serif;
+            background: linear-gradient(to right,rgb(180, 195, 205), rgb(164, 162, 220),rgb(193, 8, 177));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2{
+            font-size: 25px;
+            font-family: sans-serif;
+            color: gray;
+        }   
+        #cor{
+            font-size: 32px;
+            background: #CFE7fA;
+            font-family: sans-serif;
+            background: linear-gradient(to right,black, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        a{
+            text-decoration: none;
+        }
+        table{ 
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: black  ;
+            border-bottom: white;
+            color: white;
+        }
+        tr:nth-child(even) {
+        background-color: grey;
+        text-align: center;
+        color: white;
+        }
+        tr:nth-child(odd) {
+        background-color: darkslategray;
+        text-align: center;
+        color: white;
+        }
+        #gradient1{
+            background-image: linear-gradient(to right,rgb(199, 193, 215), rgb(71, 87, 194),rgb(173, 17, 137));
+            margin-bottom: 25px;
+        }
+        #gradient3{
+            background-image: linear-gradient(to right, rgb(96, 15, 96), rgb(152, 104, 210));
+            margin-bottom: 25px;
+        } 
+        #gradient2{
+            background-image: linear-gradient(to right,rgb(148, 20, 20), #0c0207);
+            margin-bottom: 25px;
+        }
+        #gradient4{
+            background-image: linear-gradient(to right, yellow, rgb(211, 177, 56));
+            margin-bottom: 25px;
+        }
+        #gradient5{
+            background-image: linear-gradient(to right, rgb(2, 1, 6), rgb(11, 35, 176));
+            margin-bottom: 25px;
+        }
+        #gradient6{
+            background-image: linear-gradient(to right, rgb(208, 139, 11), #d6df62);
+            margin-bottom: 25px;
+        }
+        #gradient7{
+            background-image: linear-gradient(to right, darkslategray, black);
+            margin-bottom: 25px;
+        }
+        #gradient8{
+            background-image: linear-gradient(to right, rgb(244, 243, 241), #283337);
+            margin-bottom: 25px;
+        }
+        #gradient9{
+            background-image: linear-gradient(to right, rgb(219, 100, 9), #b49660);
+            margin-bottom: 25px;
+        }
+        #dkoknows{
+            font-size: 40px;
+            color: white;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: #d1b58f;">
+              <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/400812152_861635392284889_6075609954112888823_n.jpg?stp=dst-jpg_p206x206&_nc_cat=108&ccb=1-7&_nc_sid=510075&_nc_ohc=9RbdaRa9XXkAX-qaRfi&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRSmuNeX-F3kmo9f3Vo8tCmcfjuxHPrWtdDL7_PyE8Z5A&oe=659D431E" width="25px">
+              RRMJ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #d1b58f;">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link indexfont" href=".\index">HOME</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link indexfont" href="#">PROFILE<span class="sr-only">(current)</span></a>
+                  </li>
+                <li class="nav-item ">
+                  <a class="nav-link indexfont" href=".\Project">PROJECT</a>
+                </li>
+              </ul>
+              <ul class="nav justify-content-end">
+                <ul class="nav-item nav-link">
+                  <a href="https://www.youtube.com/watch?v=qZqI0uUddUU" class="fa fa-facebook"></a>
+                </ul>
+                <ul class="nav-item nav-link">
+                  <a href="https://youtu.be/vBFkBqctk-A?si=6Z9owNqgvW41Keek" class="fa fa-twitter"></a>
+                </ul>
+                <ul class="nav-item nav-link">
+                  <a href="https://youtu.be/B7aSDu6Qh6U?si=xqqVs5S3d41pnsB2" class="fa fa-instagram"></a>
+                </ul>
+                <ul class="item nav-link">
+                  <a href="https://www.youtube.com/watch?v=JiNh-go3YCs" class="fa fa-google"></a>
+                </ul>
+              </ul>
+            </div>
+          </div>
+    </nav>
+<center><img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/400812152_861635392284889_6075609954112888823_n.jpg?stp=dst-jpg_p206x206&_nc_cat=108&ccb=1-7&_nc_sid=510075&_nc_ohc=9RbdaRa9XXkAX-qaRfi&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRSmuNeX-F3kmo9f3Vo8tCmcfjuxHPrWtdDL7_PyE8Z5A&oe=659D431E" width="200px" style="border-radius: 100px;"></center>
+    <h2 class="aboutme" style="color: gray;" style="font-size: larger;"><center>SOL, SIMON JAMES C.</center></h5>
+    <h2 class="aboutme" style="color: gray;" style="font-size: larger;"><center>SOL.SIMONJAMES@GMAIL.COM</center></h5>
+<h1 style="text-align: center;">ABOUT ME</h1>
+<div class="container">
+    <p  id="aboutme" style="color: gray;" style="font-size: 35px;">im just a boy na biglaan napadpad sa information system ang dream kopo talaga ay mapadpad sa medical course like psychology, medical technology.</p>
+</div>
+<h1 style="text-align: center;">EDUCATIONAL BACKGROUND</h1>
+<div>
+
+</div>
+<div>
+    <div class="container">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/386881277_369699832399486_5020397189865813919_n.png?_nc_cat=107&ccb=1-7&_nc_sid=510075&_nc_ohc=V2VcjZnvQD4AX_sDc03&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdT4gS7QmuZ-MXkalYUgG2NWAPswtElZHo1Gi2uwSh3oWQ&oe=659D62CC" alt="">
+        <h3 id="kld" style="margin-bottom: 0%;">BACHELOR OF SCIENCE IN INFORMATION SYSTEMS</h3>
+        <h3 id="kld" style="font-size: smaller;" style="margin: 0%;">KOLEHIYO NG LUNGSOD NG DASMARINAS (2023)</p>
+    </div>
+    <div class="container">
+        <img  src="https://scontent.xx.fbcdn.net/v/t1.15752-9/406835759_339367238726049_8022000109416464778_n.png?_nc_cat=109&ccb=1-7&_nc_sid=510075&_nc_ohc=cR1B40TvrbsAX_bEDlZ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQbC3-Bf--lm7U57sEm1W_F4uGmkyRRHNlk-zt5Cgcptw&oe=659D4C7D">
+        <h3 id="gpgshs" style="margin-bottom: 0%;">COMPUTER SYSTEM SERVICING</h3>
+        <h3 id="gpgshs" style="font-size: smaller;">GEN. PANTALEON GARCIA SENIOR HIGH SCHOOL (2021-2023)</h3>
+    </div>
+    <div class="container">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/403406408_3685830071738898_9087060694206843494_n.png?_nc_cat=104&ccb=1-7&_nc_sid=510075&_nc_ohc=9-pBCwvlSZ4AX-loLpD&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRro8m-HVq2qArcHEsOplgW1EitxQrhTAdU-TyiFE9Dow&oe=659D3AAC">
+        <h3 id="inhs" style="padding-top: 100pxx;">IMUS NATIONAL HIGH SCHOOL (2018-2021)</h3>
+    </div>
+    <h2 style="text-align: center;"></h2>
+    <div class="container">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/406939715_687642893500532_206568464011689992_n.png?_nc_cat=104&ccb=1-7&_nc_sid=510075&_nc_ohc=-_Ikz92o6MYAX94_53-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQ31QNOBWnfK84tfCVLavRd477T4at0bIhVLBsHxxbcJQ&oe=659D51FB">
+        <h3 id="pwhs" style="margin-top: 30px;" >PASAY CITY WEST HIGH SCHOOL (2017-2018)</h3>
+    </div>
+    <div class="container">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/386877384_329123166568666_9168709701438150580_n.png?_nc_cat=108&ccb=1-7&_nc_sid=510075&_nc_ohc=PdCvVzNt4EgAX_uleA7&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTLR7poaXIABKYCmjr37FMq7oRu5cSnojktrHnCYb7r1A&oe=659D3DD2">
+        <h3 id="pasay" style="margin-top: 30px;">JOSE RIZAL ELEMENTARY HIGH SCHOOL (2011-2017)</h3>
+    </div>
+</div>
+<div>
+    <h1 style="text-align: center;">HOBBIES</h1>
+    <div class="container" id="gradient7">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTshxg1GC8P88lbc6bQAH9D0S3ROUQBvAK1Wz_wV0XR1BH-Nfk4FClcKBQJasI-ouILO0E&usqp=CAU">
+        <h3 style="padding-top: 10px;">Watch/ReadAnything About History</h3>
+    </div>
+    <div class="container" style="background-color: lightsalmon;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbH2WcRcCadJRbbXEyxzFWpH-g_7DJd5r9zI_q-zS8J9pe6gUk5-pUmgpfULY_PbYn99E&usqp=CAU" alt="">
+    <h3>Watch/Read Anything about Medical</h3>
+    </div>
+    <h2></h2>
+</div>
+<h1 style="text-align: center;">FAVORITE SONG</h1>
+<div>
+    <div class="container" id="gradient1" class="bla">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Taylor_Swift_-_Lover.png/220px-Taylor_Swift_-_Lover.png" alt="">
+        <h3>Cruel Summer</h3>
+        <h4>Taylor Swift</p>
+    </div>
+    <div class="container" id="gradient2">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Taylor_Swift_-_Red_%28Taylor%27s_Version%29.png" alt="everything has changed">
+        <h3>Everything Has Changed</h3>
+        <h4>Taylor Swift</h4>
+    </div>
+    <div class="container" id="gradient3">
+        <img src="data:image/jpeg;base64,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" alt="i can see you">
+        <h3>I Can See You</h3>
+        <h4>Taylor Swift</h4>
+    </div>
+    <div class="container" id="gradient4">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAKAAoAMBEQACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQUCAwQGBwj/xAA8EAABAwICBQgJAwMFAAAAAAABAAIDBBEFIRIxNEFRExVhcXKCkZIGIjJCUmKBscEzY3MHFKEjJENT4f/EABoBAQACAwEAAAAAAAAAAAAAAAABBQIDBAb/xAAyEQACAQMCAwcEAQQDAQAAAAAAAQIDBBEFMRIhMxRBUWFxgZETFSIyoTRCseEjwdFS/9oADAMBAAIRAxEAPwD69PMyCPTkJte2QVPVrRpR4pbHTCDm8I5uc6bi7yrl+40Dd2aoOdKbi/yqPuVDzHZag5zp/nHdU/cqHmOzVBznTcX+VPuVDzHZqg5zpuL/ACp9yoeY7NUHOdN8T/Kj1GgiOzVBzpTfP5VH3K3J7LUI51pr29e/ZR6nb+ZKtahjzvSaRaC8kawBmo+50PP4HZankSMWpv3PBPulDz+B2WoTzrTfueCfc7fz+B2WoOdqb9zwT7pb+fwOy1BzrTfP4J9zoefwOy1COdab5/Kn3O38/gdlqE8603z+VPudDz+B2WY51pvn8qfc6Hn8DstQc6U3z+VT9zoefwOy1BzpTfP5U+50PP4I7LUOmnnZUM02X0b2zC6qNaNaPFHY1Tg4PDObGNj7wXJqf9P7o22vUKO/SvPFkSpICZBBNlBOBdMkhoLjZtyeARJyeIrJDwubKz0rOJUeBVFRhjSa2MB0cQDXF2edwd1rn6LutKMPqqNfkn8mmrUfDmB5XDKH0n9KqOCsxbFjQUMrdJtPRs0JHjiTuv1rtq1rOym4UYcUl3vmjRCFWssyeEeuwnC6PCaXkKKLRBzc5xLnPPFxOZKqa1xUry4pv/r4R1wpqCxE77hauRkRvUEgoAgBQAKRgKGwTdTkYF1AwXWC50p7Z/C9BpXRfqV131DLGdj74Wep9D3RFr1CiXnWWI+qbAkXcbC9+hSst4QfLc7IcNqJbEt0Gne7X4LupadWqb8l5midzTj5mckNDS+rI900g90ZBZzpWlvym+KXgYxnWqbLCOZ9S8jRjaIWfDHl4lcsrmT5QXCvL/tm1Ukub5s53AOBBAIOsHetGXk2gNAADQABqAGpQ+e4FljgkJgEoAiICkBAQoJJUkBAEBd4Jsjv5D9gvQaV0H6ldd9QyxnY++FnqfQ90Ra9Qol5wsjroaJ9SdIHRYDm5dtpZyr89l4mitXVPl3lzFBBSsJa0NtrcdavqdCjQjyRXyqTqPmVtXiL5yWQktj1aV8yqm51CVRuNPkjrp2yhzluVxVWzsRCgBMAKNgFOUDfDSTzZxxkjicgumla1qvOMTVOrCO7OyPCHnOWQN6Gi67oaTJ/vLBzyu1/ajqjwqmZ7Qc/rK7IabQjvlml3VR7cje2kpm6oWeF10K1ox2ivg1urN95l/bwf9MflCy7PS/+V8Ecc/EwfQ0r9cLPoLLXKyoS3ijJVqi2kcc+EtDSac5/C7euKtpccZpP2ZvhdPP5FU5pY4tcLEGxCpZpxlhrY7otNZRjZYkl3gmyO7Z+wXoNK6D9Suu+oZYxsffCz1Poe6Itf3KO2tedaLHOD0tMxscEbWag0L1tGEYU4xjskVE23JtmvEYZJ6YsiIvcEg7wtN7RnVouMNzOhOMZ5ZROp52+3E8fRedlQrR3i/gsfqQezI5KQn9N/lKhU6m3C/hmXHHxNjKSpf7ML7dIstkbWvLaLMHWgt2bo8KqXH1yxnWbrohpleW+Ea5XdNbHXFhEY/VkLugZLtp6VTS/N5NEruT2R2Q0sEP6cTR06yu6lbUqX6RNEqs5bs3LeawgCAIAgCAgoCoxqMNlZIB7YsekhUeq00pRmu877SWU4+BWKoOwu8E2R3bP4XoNL6D9Stu+oZYvsffCz1Poe6Ft1CjK88yxLCgxLkWiKdpLBqcNYVlZ6j9JKnU2Xecta24nxRLOOrp5BdszOomxVvC7oTX4yRxulNbo28oz42+K3ccfEw4X4EGVgGcjR1uUOpBbtE8MvA1vrKZntTM+hutMruhHeaMlSm9kaX4pTN9kud1BaJalQW3M2K2m9zQ7GG+5C76uXPLVo90TYrR97NRxeU6o2LU9Vqd0UZ9jj4hmMSA+vE0jo1pHVp5/KIdnHuZaU8zZ4hIzUdx3K4o1o1oKcTjnBwlhm1bTAIAgCAgoCpx1wJiZwuVS6vJfhH1O6zW7Ku6psnaXeC7Ke2fwvQ6W/wDgfqVt31DLF9j7wWWpdD3IteoUV15zcs8BQSQc9YTkCRfiVKIGes5pvuMIDWpQMrlTkgi6gnAQgyiifNIGMaS4rOnSlUlwxREpqKyz0VJAKeBsYztrPSvUW9FUaagiqqT45ORuW81hAEAQEOIAJJtZQ2ksseR5utn/ALipe8ezu6l5a7rfXquXd3FtSp8EcGlcptLvBdld2z9gvQ6V0H6ldd/uZYxsffCy1P8Ap/dEWvUKJeeLIgrFkhASFKBN1OSEQoAUgEgKG8A6qShmqSCBox/EV229lVrPOy8TRVrxhy7y6paaOmZaMesfadvKvqFtToxxH5K+pUlN8zeug1hAEAQD7oCoxWtDrwREke8Rv6FSaheZ/wCKHud1tQx+cirVOdoCkF3guyu7Z/Cv9K6D9Stu/wB0ZYxsffCz1Poe6IteoURyXnGWaF8kyMBQiRvU7kEHNGDJgLshmeAUxTexEnjc7IMNnlzeOTb82vwXfR06tU5y/FeZoncwjtzLKmw+CGxtpuG9ytqFhRpc935nHO4nLlsddl2mglAEAQBANSgFRiGI6QMNO4/M8b+pU15f5zCk/f8A8O2hb/3TKvVqVKdw3LLmACoQLvBdjd2z+F6DSui/Urbv9zLGNj7wWepc6Huha9Qol5zBZIFGgAgMo43SP0WNJPALOnTlOWIrJjKSisssqbCSc6h1r+61WtDS2+dV+yOSpd90EWUNPDALRRhtt+9WtKhTpLEUckqkpbs2rcYEBASgCAIAgIJABJNgBcngobSWWMN7FJiGIGY8nCSI+PxLz97fur+FP9f8/wCixoW6jzluV91WZOvAQC6AlSQXeC7I7+Q/heg0vov1K67/AHMsY2LvBZ6l/T+5ja9Qol5wtAEIOqio31RvqYNbl2WtpK457R8TTWrKn6l5BTxwN0Y2gcTvK9DRoQorEEVs5ym8tm1bjAhASgCAIAgCAHLWgKPFK10zzFE60YO73l56/vXUk4Q/Usbehwrie5qo6VlQ17nPc3RIFmi602lrGum28YNlaq6bSSN4w1hic7Tddt88rLqWnQcH+T5GntUsrkBh8bXEOLiQ0G/SdyjsEE2m9l/LDuJPY3yYbEHAtFg6wtw4rpqafSzy5Zwa1cyxzOSvgiYI3xAgOuLHoXBeUKUUpU+830KkpNqR3YJsru2fsFY6V0H6nPd9QyxfY+8Fnqf9P7oxtuoUa86WZ0UNKamWxuGNzcQuq0tXXn5Lc01qv04+Z6CNjWMa1oAaNQC9NCKjFRjsirbbeWZLIgICEBKAIAgCAIDixWbkaazT60h0R1Kv1Gs6dLC3Z0W0FKfPuKBecLMscPl0IiyKN75b6VhkPFWllVUabhCLctzkuIZlmTwiZZ5DRhjYHWeLA8XXusqtaf0MKDw+/wAzGNOPHlvb/B1zvmMzImxs0h67gX8F2VZ1ZTjBJZ3fM0wUUm2zDlKt0jWiJt4zpEl2TgbrX9W5cscK5c9+WDLhpJZzuV9fUPlls5oboZWvdVl5cSqzw1jB10KajHPiWWCbK7tn7BWuldB+pyXfUMsX2PvBZ6l0PcxteoUYzNhr3LzqWXgsj0VFAKeBrbesc3HpXqbSgqNJR7+8qas+OeToXSawgCAIAgCAIAgCArMbYTFG8DJrjdVOqxbhGXgzrtH+TRTnWVRPcsCwwgNa6SV5ADRa5VppiSlKcjlusvEUd7zG10brjk42ucCFZtwTjJbJNnIk3nxY02CflXOFhFa56Soc4cf1Htj/ACMPh4V4mkaZqpdJ8boT6pbf2Rb/ANWlOTrzzJOD5Yzt6Gx4UFhcyolDRK8Rm7A4hvUqGokptReVksINuKyXOCbI7+Q/hX2ldB+pX3fUMsX2PvBZ6l0PdGNr1Crw+MS1kbTqB0vBU9nTU68U/X4OyvLhptnol6gqwgCAIAgCAIAgCAIDXPEJonRuGTgtdWlGrBwkZRk4yTR5uoifBKY3izh/leUrU5UpuE9y3hNTjlHBWQV0kjXUtW2BgbZzHQh9zxvcJTlTSxOOfcSUm+TNMlPipP8Ap4jEBwNNew8VsVSj/dF/P+jHgn4/wS+DEs9DEWNJdcXgBAFhla/EE/VYqpSX9v8AJPDLO/8ABrFNi/KZYnCWWzvTC/3Wf1LfH6PPqRw1PH+CwpmSxwtbUSNlk957W6N/puWibTf4rCNiTxzPQYJsju2fsFfaV0H6ldd9QzxfY+8Fs1Loe5jbdQ4MHH+97pVbpnX9mdN10y8XoSuCAIAgCAIAgCAIAgCA56yljqoyH5Hc7gua5toV44lv4mynVlTeUUVTSy07tGQHoO4rzlxbVKLxJFnTqxnsaFzm0ICEBO5AXmB7G7+Q/YL0OldB+pW3fUM8X2PvBZ6l0PdGNr1Cvwk2rW9LSq3TXi4x4o6rrpl6vRFaEAQBAQgJQBAEAQBAa6iaKnp5Z53hkUTC97zqa0C5KJZ5A8L6E+nMXpB6VYvRjEY5KW7Th8fIljntF9JwJGe7Xmt1SnwxTMVLLPeSMbI0te0Oady55wjOPDJZRmm4vKZU1eEkXdTG4+A/hU1xpbXOlz8v/Dup3eeUysc0sdouaQRrBGpU8otPDXM7ItNZRCgka1O5BeYJsru2fwvQaV0H6ldd/uZ4vsfeCz1Loe5ja9QqKN/J1UTjqDhdUtrPgrRl5ndVjxQaPSL1RUhAQgJQEICUAQBAQgJQHBj2HMxbBK7DpJHRsqYHRl7NYuFMXh5DPhH9HcHnrfThtRC/Qiw0OlluPbBuwN6Cbk/RdlaWIGqK5n6GXEbQgNU9PFUNtKwHp3rTWoU6yxNZM4TlB8mVVThL2etA7Tb8J1qnr6XKPOk8+XedlO7T5T5Fe5jmOLXtLXDcRZVkoyi8SWGdakpLKLnBNlf2/wABXuldF+pX3f7mzGNi7wWzUuh7mNr1Cjvv3jUvPZLLc9JTScrBG/4mgnrXq6FT6lOM/FFROPDJo2LcYBASgIQEoAgCAhASgIIuLcUB87/pdhvML/SGOpj9d2JOZpWFw1ou2/mv9VuqviwYxPoAqISwvbINEa1pMjEVdOf+QDryTDBuBDhcG4KAlAap4Ip26MrQ4f5WqrQp1ViayZxnKLymY0lOKZjmNcS0uvnuWFvQVCLjF8ialR1HlmjGNi7wXPqf9P7my16hRrzpZFzgsulA6K+bHXHUVfaVV4qbh4HBdxxLPiWKtDkCAIAgCAIAgCAIAgOeWjglLnGNrXuzL2ixOVs+KnIOd+HZepJ4hMg454JIMpG5HfuU7gzhqJIjk424FMA7IsQY79VpB4jNRgHXHIyQXY4O6ioBkgNc8LJ49CQXb0FaqtKFWPDPYyhNweUc3NlL8LvMub7db+H8s29pqG2Cjhp3l8QcCRbMrbRtKVGTlDf1MZ1ZTWJHQuk1BAEAQBAEAQBAEAQBAEBi5rXtLXgEHigOd2H051B46AVOQY83w/FJ4qMsGcdFFG8Pa59x0oDpQH//2Q==" alt="talking to the moon">
+        <h3>Talking to the moon</h3>
+        <h4>Bruno Mars</h4>
+    </div>
+    <div class="container" id="gradient5">
+        <img src="data:image/jpeg;base64,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" alt="Vampire">
+        <h3>Vampire</h3>
+        <h4>Olivia Rodrigo</h4>
+    </div>
+    <div class="container" id="gradient6">
+        <img src="https://i.pinimg.com/236x/44/84/3c/44843c6b0d42b67a167e3b8603b540d2.jpg" alt="orange">
+        <h3>Orange</h3>
+        <h4>7</h4>
+    </div>
+</div>
+<h1 style="text-align: center;">FAVORITE SERIES</h1>
+<div class="container" id="gradient7">
+    <img src="https://i.pinimg.com/236x/59/0a/ab/590aabd8aeaab181569908c4d346804c.jpg">
+    <h3 style="padding-top: 20px;">WEDNESDAY</h3>
+</div>
+<div class="container" id="gradient8">
+    <img src="https://avatarfiles.alphacoders.com/288/288893.jpg" alt="the queens gambit">
+    <h3 style="padding-top: 25px;">THE UMBRELLA ACADEMY</h3>
+</div>
+<div class="container" id="gradient9">
+    <img src="https://i.pinimg.com/564x/fa/2e/0b/fa2e0b48af6f4b1acf0e05460ee42c98.jpg" alt="">
+    <h3 style="padding-top: 15px;">THE QUEENS GAMBIT</h3>
+</div>
+<div class="container" id="gradient2" style="height: auto;">
+    <img src="https://i.pinimg.com/564x/0a/b8/fe/0ab8fecd7b0103a5304fb98c90e9f43e.jpg" id="gradient2">
+    <h3 style="padding-top: 20px;">ONE PIECE</h3>
+</div>
+<div style="overflow-x: auto;">
+    <h1>CERTIFICATE OF ENROLLMENT</h1>
+    <table>
+        <tr>
+            <th>
+                SECTION
+            </th>
+            <th>
+                COURSE CODE
+            </th>
+            <th>
+                COURSE CODE
+            </th>
+            <th>
+                UNITS
+            </th>
+            <th>
+                DAYS
+            </th>
+            <th>
+                TIME
+            </th>
+            <th>
+                ROOM
+            </th>
+            <th>
+                FACULTY
+            </th>
+            <th>
+                TYPE OF LEARNING
+            </th>
+            <th>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                BSIS 101
+            </td>
+            <td>
+                CCIS1101L
+            </td>
+            <td>
+                INTRODUCTION TO COMPUTING LAB
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                MONDAY
+            </td>
+            <td>
+                07:00-10:00
+            </td>
+            <td>
+                COMLAB 1
+            </td>
+            <td>
+                BORJA, MARK CHRISTOPHER
+            </td>
+            <td>
+                ONSITE
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BSIS101
+            </td>
+            <td>
+                CCIS1101L
+            </td>
+            <td>
+                INTRODUCTION TO COMPUTING 1 LEC
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                MONDAY
+            </td>
+            <td>
+                13:00-15:00
+            </td>
+            <td>
+                1302
+            </td>
+            <td>
+                BORJA, MARK CHRISTOPHER
+            </td>
+            <td>
+                ONSITE
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BSIS 101
+            </td>
+            <td>
+                CCIS1102L
+            </td>
+            <td>
+                COMPUTER PROGRAMMING 1 LAB
+            </td>
+            <td>
+                1
+            </td>
+            <td>
+                MONDAY
+            </td>
+            <td>
+                07:00-10:00
+            </td>
+            <td>
+                COMLAB 1
+            </td>
+            <td>
+                LODRONIO, RANIELLE
+            </td>
+            <td>
+                ONSITE
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BSIS 101
+            </td>
+            <td>
+                CCIS1102
+            </td>
+            <td>
+                COMPUTER PROGRAMMING 1 LEC
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                MONDAY
+            </td>
+            <td>
+                13:00-15:00
+            </td>
+            <td>
+                1302
+            </td>
+            <td>
+                SALACSACAN, ANNABELLE
+            </td>
+            <td>
+                ONSITE
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BSIS 1O1
+            </td>
+            <td>
+                GEC4000
+            </td>
+            <td>
+                FUNDAMENTALS OF INFORMATION SYSTEM
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                TUESDAY
+                FRIDAY
+            </td>
+            <td>
+                13:00-14:30
+            </td>
+            <td>
+                1303
+            </td>
+            <td>
+                ALCONES, SHEENA
+            </td>
+            <td>
+                TUESDAY-ASYNCHRONOUS
+                FRIDAY-SYNCHRONOUS
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BSIS 101
+            </td>
+            <td>
+                GEC8000
+            </td>
+            <td>
+                SCIENCE, TECHNOLOGY AND SOCIETY
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                MONDAY
+                THURSDAY
+            </td>
+            <td>
+                10:00-11:30
+            </td>
+            <td>
+                1403
+            </td>
+            <td>
+                AQUINO, JHELLEE MARIE
+            </td>
+            <td>
+                ONSITE
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BSIS 101
+            </td>
+            <td>
+                GEC1000
+            </td>
+            <td>
+                LIVING IN THE IT ERA
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                TUESDAY
+                FRIDAY
+            </td>
+            <td>
+                08:30-10:00
+            </td>
+            <td>
+                1303
+            </td>
+            <td>
+                CONG-AY, LORIELYN
+            </td>
+            <td>
+                TUESDAY-ASYNCHRONOUS
+                FRIDAY-SYNCHRONOUS
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BSIS 101
+            </td>
+            <td>
+                GEC9100
+            </td>
+            <td>
+                FILIPINO 1
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                TUESDAY
+                FRIDAY
+            </td>
+            <td>
+                11:30-13:00
+            </td>
+            <td>
+                1303
+            </td>
+            <td>
+                BUELO, ROBBIE JAN VINCENT
+            </td>
+            <td>
+                TUESDAY-ASYNCHRONOUS
+                FRIDAY-SYNCHRONOUS
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BSIS 101
+            </td>
+            <td>
+                NSTP1101
+            </td>
+            <td>
+                NATIONAL SERVICE TRAINING PROGRAM 1
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                TUESDAY
+            </td>
+            <td>
+                16:00-19:00
+            </td>
+            <td>
+                1403
+            </td>
+            <td>
+                LACEDA, REGINALD GREGIENOR
+            </td>
+            <td>
+                ONSITE
+            </td>
+        </tr>
+        <tr>
+            <td>
+                BSIS 101
+            </td>
+            <td>
+                PE1101
+            </td>
+            <td>
+                PATHFIT 1
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                MONDAY
+            </td>
+            <td>
+                16:00-18:00
+            </td>
+            <td>
+                GYM 4
+            </td>
+            <td>
+                TORRO, MARIA CHRISTINA
+            </td>
+            <td>ONSITE</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
